@@ -50,9 +50,12 @@ talentsFile.forEach(sheet => {
 
 		if (charaName) {
 			prevChara = charaName;
-			let fixedName = charaName.toLowerCase();
+			let fixedName = charaName
+				.toLowerCase()
+				.replace("justice knight", "\"justice knight\"")
+				.replace("amiya guard ver.", "amiya guard");
 			russianEntries.forEach(([rus, en]) => {
-				if (fixedName.includes(rus) || fixedName.includes(en)) {
+				if (fixedName.includes(rus)) {
 					fixedName = rus;
 				}
 			})
