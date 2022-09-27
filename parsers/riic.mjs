@@ -12,7 +12,7 @@ const charaRIIC = {};
 
 console.time("Succesfully saved the file in");
 
-const riicFile = await readFile(`./tl/jet_riic.csv`).then(file => file);
+const riicFile = await readFile(`../input/jet_riic.csv`).then(file => file);
 
 parse(riicFile, (err, file) => {
 	if (err) throw err;
@@ -42,7 +42,7 @@ parse(riicFile, (err, file) => {
 			charaRIIC[buffId] = temp;
 		}
 	});
-	writeFile(`./tl/parsed_riic.json`, JSON.stringify(charaRIIC, null, 2))
+	writeFile(`../output/parsed_riic.json`, JSON.stringify(charaRIIC, null, 2))
 		.then(() => console.timeEnd("Succesfully saved the file in"))
 		.catch(err => console.error("An error occured while writing the file:", err));
 });

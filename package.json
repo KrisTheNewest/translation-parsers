@@ -1,6 +1,6 @@
 {
   "name": "translation-parsers",
-  "version": "0.1.2-BETA",
+  "version": "1.0.0-ALPHA",
   "description": "Long overdue revamp of parsers for Jet's translations",
   "main": "index.js",
   "scripts": {
