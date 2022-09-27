@@ -1,6 +1,6 @@
 {
   "name": "translation-parsers",
-  "version": "1.0.1-ALPHA",
+  "version": "1.1.0-ALPHA",
   "description": "Long overdue revamp of parsers for Jet's translations",
   "main": "index.mjs",
   "scripts": {
