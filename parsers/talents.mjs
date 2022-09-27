@@ -12,7 +12,7 @@ import { russianEntries } from "../misc/russianNames.mjs";
 const charaTalents = {};
 
 console.time("Succesfully saved the file in");
-const talentsFile = xlsx.parse(`../input/jet_talents.xlsx`);
+const talentsFile = xlsx.parse(`./input/jet_talents.xlsx`);
 talentsFile.shift();
 talentsFile.forEach(sheet => {
 	const {name, data} = sheet;
@@ -62,6 +62,6 @@ talentsFile.forEach(sheet => {
 	});
 });
 
-writeFile(`../output/parsed_talents.json`, JSON.stringify(charaTalents, null, 2))
+writeFile(`./output/parsed_talents.json`, JSON.stringify(charaTalents, null, 2))
 	.then(() => console.timeEnd("Succesfully saved the file in"))
 	.catch(err => console.error("An error occured while writing the file:", err));
