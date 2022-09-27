@@ -7,7 +7,6 @@
 
 import { parse } from 'csv';
 import { readFile, writeFile } from "fs/promises";
-import {russianNames, russianEntries} from "./russianNames.mjs";
 
 const charaRIIC = {};
 
