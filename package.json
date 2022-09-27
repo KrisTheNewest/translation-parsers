@@ -1,8 +1,8 @@
 {
   "name": "translation-parsers",
-  "version": "1.0.0-ALPHA",
+  "version": "1.0.1-ALPHA",
   "description": "Long overdue revamp of parsers for Jet's translations",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
